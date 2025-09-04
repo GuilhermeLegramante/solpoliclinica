@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sol Policlínica — Confiança e Credibilidade</title>
+    <meta name="description"
+        content="Sol Serviços Assistenciais e Cauzzo Policlínica — Hub de profissionais da saúde em Santiago-RS. Confiança e Credibilidade se conquista com tempo e trabalho sério." />
+    <meta property="og:title" content="Sol Policlínica — Confiança e Credibilidade" />
+    <meta property="og:description" content="Hub de profissionais da saúde em Santiago-RS." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind on-the-fly config
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0ea5e9', // sky-500
+                            blueDark: '#0284c7',
+                            yellow: '#facc15', // yellow-400
+                            yellowDark: '#eab308',
+                            ink: '#0f172a', // slate-900
+                        },
+                    },
+                    boxShadow: {
+                        soft: '0 10px 30px -12px rgba(2,132,199,.25)',
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "Helvetica Neue", "Arial", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, .6);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-slate-800">
+    <!-- Top Bar -->
+    <div class="bg-brand.blue text-white text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+            <p class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M2.25 6.75l8.954 5.373a.75.75 0 00.792 0L21.75 6.75M3.75 6.75V18a2.25 2.25 0 002.25 2.25h12A2.25 2.25 0 0020.25 18V6.75M3.75 6.75L12 12.75 20.25 6.75" />
+                </svg> contato@solpoliclinica.com.br</p>
+            <p class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M1.5 4.5A3 3 0 014.5 1.5h1.372c.86 0 1.643.49 2.02 1.26l.98 1.96c.32.64.29 1.4-.08 2.02L7.86 8.42a1.875 1.875 0 00.44 2.43l4.25 3.4a1.875 1.875 0 002.43-.44l1.68-2.52c.45-.68 1.24-1.06 2.05-.97l2.2.22A2.25 2.25 0 0121.75 13.7v1.8a3 3 0 01-3 3h-1.5C8.56 19.5 1.5 12.44 1.5 4.5z" />
+                </svg> (55) 3251-8978</p>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand.yellow to-brand.blue shadow-soft">
+                    </div>
+                    <span class="text-xl font-extrabold text-brand.blue">Sol Policlínica</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6 font-medium">
+                    <a href="#home" class="hover:text-brand.blue">Início</a>
+                    <a href="#sobre" class="hover:text-brand.blue">Sobre</a>
+                    <a href="#servicos" class="hover:text-brand.blue">Serviços</a>
+                    <a href="#equipe" class="hover:text-brand.blue">Equipe</a>
+                    <a href="#contato" class="hover:text-brand.blue">Contato</a>
+                </nav>
+                <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+            <div class="px-4 py-3 flex flex-col gap-2 bg-white">
+                <a href="#home" class="py-2" onclick="toggleMenu()">Início</a>
+                <a href="#sobre" class="py-2" onclick="toggleMenu()">Sobre</a>
+                <a href="#servicos" class="py-2" onclick="toggleMenu()">Serviços</a>
+                <a href="#equipe" class="py-2" onclick="toggleMenu()">Equipe</a>
+                <a href="#contato" class="py-2" onclick="toggleMenu()">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 via-white to-yellow-50"></div>
+        <div class="max-w-7xl mx-auto px-4 py-24 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-brand.ink">
+                    Confiança e Credibilidade<br>
+                    <span class="text-brand.blue">se conquista com tempo</span><br>
+                    e trabalho sério.
+                </h1>
+                <p class="mt-6 text-lg text-slate-600">Somos um hub de profissionais da saúde oferecendo atendimento
+                    humanizado e multidisciplinar em Santiago-RS.</p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="#equipe"
+                        class="px-5 py-3 rounded-xl bg-brand.blue text-white font-semibold shadow-soft hover:bg-brand.blueDark">Conheça
+                        a equipe</a>
+                    <a href="#contato"
+                        class="px-5 py-3 rounded-xl border border-brand.blue text-brand.blue font-semibold hover:bg-sky-50">Agende
+                        seu atendimento</a>
+                </div>
+                <div class="mt-8 text-slate-500 text-sm flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.25c-4.97 0-9 4.03-9 9 0 7.5 9 10.5 9 10.5S21 18.75 21 11.25c0-4.97-4.03-9-9-9zm0 12.375a3.375 3.375 0 110-6.75 3.375 3.375 0 010 6.75z" />
+                    </svg>
+                    Rua Venâncio Aires, 1276 — Santiago/RS · (55) 3251-8978
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-6 -left-6 w-32 h-32 rounded-3xl bg-yellow-200/60 blur-2xl"></div>
+                <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?q=80&w=1200&auto=format&fit=crop"
+                    alt="Equipe de saúde" class="relative rounded-3xl shadow-xl ring-1 ring-slate-200">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand.ink">Sobre a Clínica</h2>
+                <p class="mt-6 text-slate-600 leading-relaxed">Há mais de <span id="anosMercado">12</span> anos no
+                    mercado, a <strong>Sol Serviços Assistenciais e Cauzzo Policlínica</strong> reúne diversas
+                    especialidades da saúde em um único lugar. Nosso compromisso é com a excelência técnica, o cuidado
+                    integral e a experiência acolhedora de cada paciente.</p>
+                <ul class="mt-6 space-y-3 text-slate-700">
+                    <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-brand.yellow"></span>
+                        Atendimentos particulares e convênios.</li>
+                    <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-brand.yellow"></span>
+                        Estrutura moderna e acessível.</li>
+                    <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-brand.yellow"></span>
+                        Equipe multidisciplinar selecionada.</li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img class="rounded-2xl shadow-soft"
+                    src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
+                    alt="Recepção" />
+                <img class="rounded-2xl shadow-soft"
+                    src="https://images.unsplash.com/photo-1580281657527-47ff5a1f0b0b?q=80&w=800&auto=format&fit=crop"
+                    alt="Consultório" />
+                <img class="rounded-2xl shadow-soft col-span-2"
+                    src="https://images.unsplash.com/photo-1583912086096-8de8be8a219e?q=80&w=1200&auto=format&fit=crop"
+                    alt="Estrutura" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-sky-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand.ink">Serviços</h2>
+                <p class="mt-4 text-slate-600">Confira algumas das especialidades e exames oferecidos pela nossa rede de
+                    profissionais.</p>
+            </div>
+            <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Exemplos de serviços -->
+                <div class="p-6 rounded-2xl bg-white shadow-soft border border-slate-100">
+                    <h3 class="font-semibold text-lg">Clínica Geral</h3>
+                    <p class="mt-2 text-sm text-slate-600">Avaliação clínica ampla, prevenção e encaminhamento para
+                        especialidades.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white shadow-soft border border-slate-100">
+                    <h3 class="font-semibold text-lg">Cardiologia</h3>
+                    <p class="mt-2 text-sm text-slate-600">Consultas, eletrocardiograma e acompanhamento de hipertensão.
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white shadow-soft border border-slate-100">
+                    <h3 class="font-semibold text-lg">Ortopedia</h3>
+                    <p class="mt-2 text-sm text-slate-600">Tratamento de dores articulares, lesões esportivas e
+                        fraturas.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white shadow-soft border border-slate-100">
+                    <h3 class="font-semibold text-lg">Ginecologia & Obstetrícia</h3>
+                    <p class="mt-2 text-sm text-slate-600">Saúde da mulher, pré-natal e exames preventivos.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white shadow-soft border border-slate-100">
+                    <h3 class="font-semibold text-lg">Pediatria</h3>
+                    <p class="mt-2 text-sm text-slate-600">Acompanhamento do crescimento e desenvolvimento infantil.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-white shadow-soft border border-slate-100">
+                    <h3 class="font-semibold text-lg">Psicologia</h3>
+                    <p class="mt-2 text-sm text-slate-600">Atendimento psicológico com foco em bem-estar e saúde mental.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand.ink">Nossa Equipe</h2>
+                <p class="mt-4 text-slate-600">Busque por nome ou filtre por especialidade.</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="mt-8 grid md:grid-cols-3 gap-4 items-end">
+                <div class="md:col-span-2">
+                    <label for="searchName" class="block text-sm font-medium text-slate-700">Buscar por nome</label>
+                    <input id="searchName" type="text" placeholder="Ex.: Maria, João..."
+                        class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand.blue focus:ring-brand.blue" />
+                </div>
+                <div>
+                    <label for="filterCategory" class="block text-sm font-medium text-slate-700">Filtrar por
+                        especialidade</label>
+                    <select id="filterCategory"
+                        class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand.blue focus:ring-brand.blue">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid de profissionais -->
+            <div id="teamGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+            <!-- Estado vazio -->
+            <div id="emptyState" class="hidden mt-10 text-center text-slate-600">Nenhum profissional encontrado com os
+                filtros aplicados.</div>
+        </div>
+
+        <!-- Dados dos profissionais em JSON (edite aqui) -->
+        <script id="professionals-data" type="application/json">{
+      "profissionais": [
+        {
+          "nome": "Dra. Maria Silva",
+          "categoria": "Cardiologia",
+          "sobre": "Especialista em cardiologia clínica e preventiva, 15 anos de experiência.",
+          "foto": "https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=800&auto=format&fit=crop",
+          "contatos": {"whatsapp": "55997316224"}
+        },
+        {
+          "nome": "Dr. João Pereira",
+          "categoria": "Ortopedia",
+          "sobre": "Atendimento a lesões esportivas e artrose. Abordagem funcional.",
+          "foto": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=800&auto=format&fit=crop",
+          "contatos": {"whatsapp": "55997316224"}
+        },
+        {
+          "nome": "Dra. Ana Rodrigues",
+          "categoria": "Ginecologia & Obstetrícia",
+          "sobre": "Saúde da mulher, pré-natal e planejamento reprodutivo.",
+          "foto": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=800&auto=format&fit=crop",
+          "contatos": {"whatsapp": "55997316224"}
+        },
+        {
+          "nome": "Dra. Beatriz Santos",
+          "categoria": "Pediatria",
+          "sobre": "Acompanhamento do desenvolvimento infantil com foco humanizado.",
+          "foto": "https://images.unsplash.com/photo-1523246191915-3e31ff600b3a?q=80&w=800&auto=format&fit=crop",
+          "contatos": {"whatsapp": "55997316224"}
+        },
+        {
+          "nome": "Dr. Lucas Almeida",
+          "categoria": "Clínica Geral",
+          "sobre": "Avaliação clínica, prevenção e gestão de doenças crônicas.",
+          "foto": "https://images.unsplash.com/photo-1601968177507-a5e8f1f57c0e?q=80&w=800&auto=format&fit=crop",
+          "contatos": {"whatsapp": "55997316224"}
+        },
+        {
+          "nome": "Dra. Paula Nunes",
+          "categoria": "Psicologia",
+          "sobre": "Atendimento adulto e infantil, TCC e bem-estar emocional.",
+          "foto": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=800&auto=format&fit=crop",
+          "contatos": {"whatsapp": "55997316224"}
+        }
+      ]
+    }</script>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-sky-50">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand.ink">Entre em Contato</h2>
+                <p class="mt-4 text-slate-600">Endereço: Rua Venâncio Aires, 1276 — Santiago/RS</p>
+                <p class="mt-1 text-slate-600">Telefone: (55) 3251-8978 · WhatsApp: (55) 99731-6224</p>
+                <div class="mt-6 rounded-2xl overflow-hidden shadow-soft ring-1 ring-slate-200">
+                    <!-- Google Maps embed (pode substituir pela sua chave/iframe) -->
+                    <iframe title="Mapa"
+                        src="https://www.google.com/maps?q=Rua%20Ven%C3%A2ncio%20Aires%201276%2C%20Santiago%20-%20RS&output=embed"
+                        class="w-full h-72 border-0"></iframe>
+                </div>
+                <div class="mt-6 flex items-center gap-4">
+                    <!-- Redes sociais (links de exemplo) -->
+                    <a href="#" aria-label="Instagram"
+                        class="p-3 rounded-xl bg-white shadow-soft ring-1 ring-slate-200 hover:scale-105 transition"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm5 5.5a5.5 5.5 0 110 11 5.5 5.5 0 010-11zm7-1.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z" />
+                        </svg></a>
+                    <a href="#" aria-label="Facebook"
+                        class="p-3 rounded-xl bg-white shadow-soft ring-1 ring-slate-200 hover:scale-105 transition"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22 12.06C22 6.477 17.523 2 11.94 2 6.356 2 1.88 6.477 1.88 12.06c0 4.98 3.638 9.116 8.392 9.94v-7.03H7.9v-2.91h2.372v-2.22c0-2.35 1.4-3.65 3.545-3.65 1.027 0 2.102.183 2.102.183v2.31h-1.184c-1.168 0-1.532.726-1.532 1.47v1.907h2.607l-.416 2.91H13.204V22c4.754-.824 8.392-4.959 8.392-9.94z" />
+                        </svg></a>
+                    <a href="https://wa.me/55997316224" target="_blank" rel="noopener" aria-label="WhatsApp"
+                        class="p-3 rounded-xl bg-white shadow-soft ring-1 ring-slate-200 hover:scale-105 transition"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.057 0c3.182 0 6.167 1.24 8.413 3.488a11.82 11.82 0 013.488 8.41c-.003 6.653-5.284 11.935-11.938 11.935-1.99 0-3.95-.49-5.688-1.425L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.593 5.45.003 9.886-4.43 9.889-9.882.002-5.462-4.415-9.89-9.878-9.894-5.452-.003-9.887 4.43-9.889 9.882-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.739-.981zm11.387-5.464c-.073-.121-.268-.195-.56-.342-.293-.147-1.733-.853-2.003-.95-.27-.098-.467-.147-.664.147-.195.293-.76.95-.932 1.146-.171.195-.342.22-.635.073-.293-.147-1.235-.455-2.353-1.45-.869-.774-1.456-1.73-1.627-2.024-.171-.293-.018-.451.129-.598.132-.131.293-.342.439-.513.146-.171.195-.293.293-.488.098-.195.049-.366-.024-.513-.073-.147-.664-1.604-.911-2.197-.239-.575-.482-.498-.664-.507-.171-.009-.366-.011-.562-.011-.195 0-.512.073-.78.366-.268.293-1.025 1.001-1.025 2.44 0 1.438 1.051 2.831 1.197 3.027.146.195 2.068 3.161 5.018 4.432.702.303 1.25.484 1.677.62.704.224 1.345.192 1.852.117.565-.084 1.733-.708 1.979-1.392.244-.683.244-1.268.171-1.392z" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <form id="contactForm" class="bg-white p-6 md:p-8 rounded-2xl shadow-soft ring-1 ring-slate-200">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">Nome</label>
+                        <input type="text" name="nome" required
+                            class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand.blue focus:ring-brand.blue" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700">Telefone</label>
+                        <input type="tel" name="telefone"
+                            class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand.blue focus:ring-brand.blue" />
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-slate-700">E-mail</label>
+                        <input type="email" name="email" required
+                            class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand.blue focus:ring-brand.blue" />
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-slate-700">Mensagem</label>
+                        <textarea name="mensagem" rows="5" required
+                            class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand.blue focus:ring-brand.blue"></textarea>
+                    </div>
+                </div>
+                <button
+                    class="mt-6 w-full px-5 py-3 rounded-xl bg-brand.yellow text-brand.ink font-semibold hover:bg-brand.yellowDark">Enviar
+                    mensagem</button>
+                <p id="formStatus" class="mt-3 text-sm text-slate-600"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="relative bg-brand.ink text-slate-100">
+        <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <h3 class="text-xl font-bold">Sol Policlínica</h3>
+                <p class="mt-3 text-slate-300 max-w-prose">Hub de profissionais da saúde em Santiago-RS. Atendimento
+                    humanizado, estrutura moderna e diversas especialidades.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Endereço</h4>
+                <p class="mt-2 text-slate-300">Rua Venâncio Aires, 1276<br />Santiago — RS</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Contato</h4>
+                <p class="mt-2 text-slate-300">Tel. (55) 3251-8978<br />WhatsApp (55) 99731-6224</p>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 py-4 text-sm text-slate-400 flex items-center justify-between">
+                <span>© <span id="yearCopy"></span> Sol Policlínica. Todos os direitos reservados.</span>
+                <a href="#home" class="hover:text-white">Voltar ao topo ↑</a>
+            </div>
+        </div>
+
+        <!-- Botão flutuante WhatsApp (canto direito) -->
+        <a href="https://wa.me/55997316224" target="_blank" rel="noopener"
+            class="fixed z-50 bottom-5 right-5 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-green-500 text-white shadow-lg hover:scale-105 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.057 0c3.182 0 6.167 1.24 8.413 3.488a11.82 11.82 0 013.488 8.41c-.003 6.653-5.284 11.935-11.938 11.935-1.99 0-3.95-.49-5.688-1.425L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.593 5.45.003 9.886-4.43 9.889-9.882.002-5.462-4.415-9.89-9.878-9.894-5.452-.003-9.887 4.43-9.889 9.882-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.739-.981zm11.387-5.464c-.073-.121-.268-.195-.56-.342-.293-.147-1.733-.853-2.003-.95-.27-.098-.467-.147-.664.147-.195.293-.76.95-.932 1.146-.171.195-.342.22-.635.073-.293-.147-1.235-.455-2.353-1.45-.869-.774-1.456-1.73-1.627-2.024-.171-.293-.018-.451.129-.598.132-.131.293-.342.439-.513.146-.171.195-.293.293-.488.098-.195.049-.366-.024-.513-.073-.147-.664-1.604-.911-2.197-.239-.575-.482-.498-.664-.507-.171-.009-.366-.011-.562-.011-.195 0-.512.073-.78.366-.268.293-1.025 1.001-1.025 2.44 0 1.438 1.051 2.831 1.197 3.027.146.195 2.068 3.161 5.018 4.432.702.303 1.25.484 1.677.62.704.224 1.345.192 1.852.117.565-.084 1.733-.708 1.979-1.392.244-.683.244-1.268.171-1.392z" />
+            </svg>
+            WhatsApp
+        </a>
+    </footer>
+
+    <!-- Aviso de Cookies -->
+    <div id="cookieBanner" class="fixed inset-x-3 bottom-3 z-50 hidden">
+        <div
+            class="glass border border-slate-200 rounded-2xl shadow-soft p-4 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-4">
+            <p class="text-sm text-slate-700">Usamos cookies para melhorar sua experiência. Ao continuar navegando, você
+                concorda com nossa <a href="#" class="underline">Política de Privacidade</a>.</p>
+            <div class="flex items-center gap-2 ml-auto">
+                <button id="cookieDecline"
+                    class="px-4 py-2 rounded-xl border border-slate-300 text-slate-700">Recusar</button>
+                <button id="cookieAccept"
+                    class="px-4 py-2 rounded-xl bg-brand.yellow text-brand.ink font-semibold">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Utilidades
+        const $ = (sel, ctx = document) => ctx.querySelector(sel);
+        const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+
+        // Menu mobile
+        function toggleMenu() { $('#mobileMenu').classList.toggle('hidden'); }
+        $('#menuBtn').addEventListener('click', toggleMenu);
+
+        // Ano no footer
+        $('#yearCopy').textContent = new Date().getFullYear();
+
+        // Anos de mercado (dinâmico a partir de 12+)
+        const foundingYear = new Date().getFullYear() - 12; // ajustável
+        const anos = Math.max(12, new Date().getFullYear() - foundingYear);
+        $('#anosMercado').textContent = anos;
+
+        // Cookie banner
+        const cookieKey = 'solpoliclinica_cookie_consent_v1';
+        const saved = localStorage.getItem(cookieKey);
+        if (!saved) { $('#cookieBanner').classList.remove('hidden'); }
+        $('#cookieAccept').addEventListener('click', () => {
+            localStorage.setItem(cookieKey, 'accepted');
+            $('#cookieBanner').classList.add('hidden');
+        });
+        $('#cookieDecline').addEventListener('click', () => {
+            localStorage.setItem(cookieKey, 'declined');
+            $('#cookieBanner').classList.add('hidden');
+        });
+
+        // Equipe: carregar dados do JSON embutido
+        const raw = document.getElementById('professionals-data').textContent;
+        const data = JSON.parse(raw);
+        const team = data.profissionais || [];
+
+        const teamGrid = document.getElementById('teamGrid');
+        const emptyState = document.getElementById('emptyState');
+        const filterCategory = document.getElementById('filterCategory');
+        const searchName = document.getElementById('searchName');
+
+        // Popular categorias únicas
+        const categories = Array.from(new Set(team.map(p => p.categoria))).sort();
+        for (const c of categories) {
+            const opt = document.createElement('option');
+            opt.value = c; opt.textContent = c; filterCategory.appendChild(opt);
+        }
+
+        function cardTemplate(p) {
+            const photo = p.foto || 'https://via.placeholder.com/600x400?text=Profissional';
+            const wa = p.contatos && p.contatos.whatsapp ? `https://wa.me/${p.contatos.whatsapp}` : 'https://wa.me/55997316224';
+            return `
+        <article class="group bg-white rounded-2xl shadow-soft border border-slate-100 overflow-hidden hover:-translate-y-0.5 transition">
+          <div class="relative">
+            <img src="${photo}" alt="${p.nome}" class="h-48 w-full object-cover"/>
+            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800 ring-1 ring-yellow-200">${p.categoria}</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-brand.ink">${p.nome}</h3>
+            <p class="mt-1 text-sm text-slate-600">${p.sobre || ''}</p>
+            <div class="mt-4 flex items-center gap-2">
+              <a href="${wa}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-brand.blue text-white text-sm font-medium hover:bg-brand.blueDark">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.057 0c3.182 0 6.167 1.24 8.413 3.488a11.82 11.82 0 013.488 8.41c-.003 6.653-5.284 11.935-11.938 11.935-1.99 0-3.95-.49-5.688-1.425L.057 24z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+      `;
+        }
+
+        function render() {
+            const q = searchName.value.trim().toLowerCase();
+            const cat = filterCategory.value;
+            const filtered = team.filter(p => {
+                const byName = !q || p.nome.toLowerCase().includes(q);
+                const byCat = !cat || p.categoria === cat;
+                return byName && byCat;
+            });
+
+            teamGrid.innerHTML = filtered.map(cardTemplate).join('');
+            emptyState.classList.toggle('hidden', filtered.length !== 0);
+        }
+
+        searchName.addEventListener('input', render);
+        filterCategory.addEventListener('change', render);
+        render();
+
+        // Form de contato (exemplo: abre WhatsApp com mensagem)
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = new FormData(e.target);
+            const nome = form.get('nome');
+            const tel = form.get('telefone');
+            const email = form.get('email');
+            const mensagem = form.get('mensagem');
+            const texto = encodeURIComponent(`Olá, meu nome é ${nome}. Telefone: ${tel} | E-mail: ${email}.\nMensagem: ${mensagem}`);
+            const url = `https://wa.me/55997316224?text=${texto}`;
+            window.open(url, '_blank');
+            document.getElementById('formStatus').textContent = 'Mensagem aberta no WhatsApp. Se preferir, aguarde nosso retorno pelo número informado.';
+            e.target.reset();
+        });
+    </script>
+</body>
+
+</html>
