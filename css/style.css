@@ -1,0 +1,68 @@
+  html {
+      scroll-behavior: smooth;
+  }
+
+  .glass {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, .6);
+  }
+
+
+  /* Variáveis de cores */
+  :root {
+      --brand-blue: #0172b8;
+      --brand-blue-dark: #0284c7;
+      --brand-yellow: #f8b11b;
+      --brand-yellow-dark: #eab308;
+      --brand-ink: #0f172a;
+  }
+
+  /* Fontes */
+  body {
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      color: var(--brand-ink);
+      margin: 0;
+  }
+
+  /* Cores utilitárias */
+  .text-brand-blue {
+      color: var(--brand-blue);
+  }
+
+  .text-brand-yellow {
+      color: var(--brand-yellow);
+  }
+
+  .bg-brand-blue {
+      background-color: var(--brand-blue);
+  }
+
+  .bg-brand-yellow {
+      background-color: var(--brand-yellow);
+  }
+
+  /* Sombreamento */
+  .shadow-soft {
+      box-shadow: 0 10px 30px -12px rgba(2, 132, 199, .25);
+  }
+
+  /* Layout básico */
+  .p-4 {
+      padding: 1rem;
+  }
+
+  .m-4 {
+      margin: 1rem;
+  }
+
+  .rounded {
+      border-radius: 0.5rem;
+  }
+
+  .hover\:bg-brand-blue-dark:hover {
+      background-color: var(--brand-blue-dark);
+  }
+
+  .hover\:bg-brand-yellow-dark:hover {
+      background-color: var(--brand-yellow-dark);
+  }

@@ -1,0 +1,105 @@
+{
+    "partners": [
+        {
+            "nome": "Ativitta",
+            "categoria": "Fisioterapia",
+            "contatos": {
+                "whatsapp": "55998001561"
+            }
+        },
+        {
+            "nome": "Áudio Som - Dr. Leonardo Buss",
+            "categoria": "Áudio",
+            "contatos": {
+                "telefone": [
+                    "3251-0385"
+                ]
+            }
+        },
+        {
+            "nome": "Bva Saúde",
+            "categoria": "Fisioterapia",
+            "contatos": {
+                "whatsapp": "55996736425"
+            }
+        },
+        {
+            "nome": "Clínica Dr. Noal",
+            "categoria": "Ultrassonografia",
+            "contatos": {
+                "telefone": [
+                    "3251-6910"
+                ]
+            }
+        },
+        {
+            "nome": "Clínica Sei (Serviço Educacional Integrado)",
+            "categoria": "Educação",
+            "contatos": {
+                "whatsapp": "55996205188"
+            }
+        },
+        {
+            "nome": "CN Enfermagem",
+            "categoria": "Enfermagem a Domicílio",
+            "contatos": {
+                "whatsapp": "55997274101"
+            }
+        },
+        {
+            "nome": "Farmácia São Jorge",
+            "categoria": "Farmácia",
+            "contatos": {
+                "telefone": [
+                    "3251-4120",
+                    "3251-1276"
+                ]
+            }
+        },
+        {
+            "nome": "Instituto Roentgen",
+            "categoria": "Radiologia",
+            "contatos": {
+                "telefone": [
+                    "3251-1727"
+                ]
+            }
+        },
+        {
+            "nome": "Laboratório Meta",
+            "categoria": "Laboratório",
+            "contatos": {
+                "whatsapp": "55999103283"
+            }
+        },
+        {
+            "nome": "Laboratório Tuiuti",
+            "categoria": "Laboratório",
+            "contatos": {
+                "telefone": [
+                    "3251-1174",
+                    "3251-4847"
+                ]
+            }
+        },
+        {
+            "nome": "Laboratório Brum",
+            "categoria": "Laboratório",
+            "contatos": {
+                "telefone": [
+                    "3251-0597"
+                ]
+            }
+        },
+        {
+            "nome": "Ótica Andrade",
+            "categoria": "Ótica",
+            "contatos": {
+                "telefone": [
+                    "3251-3907",
+                    "3251-8343"
+                ]
+            }
+        }
+    ]
+}

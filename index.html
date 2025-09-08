@@ -20,76 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" href="css/style.css">
 
-        .glass {
-            backdrop-filter: blur(8px);
-            background-color: rgba(255, 255, 255, .6);
-        }
-
-
-        /* Variáveis de cores */
-        :root {
-            --brand-blue: #0172b8;
-            --brand-blue-dark: #0284c7;
-            --brand-yellow: #f8b11b;
-            --brand-yellow-dark: #eab308;
-            --brand-ink: #0f172a;
-        }
-
-        /* Fontes */
-        body {
-            font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-            color: var(--brand-ink);
-            margin: 0;
-        }
-
-        /* Cores utilitárias */
-        .text-brand-blue {
-            color: var(--brand-blue);
-        }
-
-        .text-brand-yellow {
-            color: var(--brand-yellow);
-        }
-
-        .bg-brand-blue {
-            background-color: var(--brand-blue);
-        }
-
-        .bg-brand-yellow {
-            background-color: var(--brand-yellow);
-        }
-
-        /* Sombreamento */
-        .shadow-soft {
-            box-shadow: 0 10px 30px -12px rgba(2, 132, 199, .25);
-        }
-
-        /* Layout básico */
-        .p-4 {
-            padding: 1rem;
-        }
-
-        .m-4 {
-            margin: 1rem;
-        }
-
-        .rounded {
-            border-radius: 0.5rem;
-        }
-
-        .hover\:bg-brand-blue-dark:hover {
-            background-color: var(--brand-blue-dark);
-        }
-
-        .hover\:bg-brand-yellow-dark:hover {
-            background-color: var(--brand-yellow-dark);
-        }
-    </style>
 </head>
 
 <body class="font-sans text-slate-800">
@@ -106,7 +38,12 @@
                     viewBox="0 0 24 24" fill="currentColor">
                     <path
                         d="M1.5 4.5A3 3 0 014.5 1.5h1.372c.86 0 1.643.49 2.02 1.26l.98 1.96c.32.64.29 1.4-.08 2.02L7.86 8.42a1.875 1.875 0 00.44 2.43l4.25 3.4a1.875 1.875 0 002.43-.44l1.68-2.52c.45-.68 1.24-1.06 2.05-.97l2.2.22A2.25 2.25 0 0121.75 13.7v1.8a3 3 0 01-3 3h-1.5C8.56 19.5 1.5 12.44 1.5 4.5z" />
-                </svg> (55) 3251-8978</p>
+                </svg> (55) 3251-8978 | <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                        d="M1.5 4.5A3 3 0 014.5 1.5h1.372c.86 0 1.643.49 2.02 1.26l.98 1.96c.32.64.29 1.4-.08 2.02L7.86 8.42a1.875 1.875 0 00.44 2.43l4.25 3.4a1.875 1.875 0 002.43-.44l1.68-2.52c.45-.68 1.24-1.06 2.05-.97l2.2.22A2.25 2.25 0 0121.75 13.7v1.8a3 3 0 01-3 3h-1.5C8.56 19.5 1.5 12.44 1.5 4.5z" />
+                </svg> (55) 3251-8904</p>
+
         </div>
     </div>
 
@@ -114,10 +51,9 @@
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-between h-16">
-                <a href="#" class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-yellow to-brand-blue shadow-soft">
-                    </div>
-                    <span class="text-xl font-extrabold text-brand-blue">Sol Policlínica</span>
+                <a href="#">
+                    <!-- Logo maior -->
+                    <img src="img/logo.png" alt="Sol Policlínica" class="w-36 h-36 object-contain">
                 </a>
                 <nav class="hidden md:flex items-center gap-6 font-medium">
                     <a href="#home" class="hover:text-brand-blue">Início</a>
@@ -125,6 +61,7 @@
                     <a href="#informacoes" class="hover:text-brand-blue">Informações</a>
                     <a href="#servicos" class="hover:text-brand-blue">Serviços</a>
                     <a href="#equipe" class="hover:text-brand-blue">Equipe</a>
+                    <a href="#parceiros" class="hover:text-brand-blue">Parceiros</a>
                     <a href="#contato" class="hover:text-brand-blue">Contato</a>
                 </nav>
                 <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200">
@@ -136,17 +73,19 @@
                 </button>
             </div>
         </div>
+    </header>
 
-        <!-- Mobile menu -->
-        <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
-            <div class="px-4 py-3 flex flex-col gap-2 bg-white">
-                <a href="#home" class="py-2" onclick="toggleMenu()">Início</a>
-                <a href="#sobre" class="py-2" onclick="toggleMenu()">Sobre</a>
-                <a href="#servicos" class="py-2" onclick="toggleMenu()">Serviços</a>
-                <a href="#equipe" class="py-2" onclick="toggleMenu()">Equipe</a>
-                <a href="#contato" class="py-2" onclick="toggleMenu()">Contato</a>
-            </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+        <div class="px-4 py-3 flex flex-col gap-2 bg-white">
+            <a href="#home" class="py-2" onclick="toggleMenu()">Início</a>
+            <a href="#sobre" class="py-2" onclick="toggleMenu()">Sobre</a>
+            <a href="#servicos" class="py-2" onclick="toggleMenu()">Serviços</a>
+            <a href="#equipe" class="py-2" onclick="toggleMenu()">Equipe</a>
+            <a href="#contato" class="py-2" onclick="toggleMenu()">Contato</a>
         </div>
+    </div>
     </header>
 
     <!-- Hero -->
@@ -358,59 +297,49 @@
                 filtros aplicados.</div>
         </div>
 
-        <!-- Dados dos profissionais em JSON (edite aqui) -->
-        <script id="professionals-data" type="application/json">
-        {
-            "profissionais": [
-                {
-                    "nome": "Dra. Cristina Grazzioli",
-                    "categoria": "Odontologia",
-                    "sobre": "Especialista e ortodontia e Doctor Invisaling CRO-RS 21007",
-                    "foto": "img/cristina-grazzioli.jpeg",
-                    "contatos": {
-                        "whatsapp": "55997316224"
-                    }
-                },
-                {
-                    "nome": "Dra. Sabrina Evelise",
-                    "categoria": "Odontologia",
-                    "sobre": "Clínica e Endodontia CRO-RS 16979",
-                    "foto": "img/sabrina-evelise.jpeg",
-                    "contatos": {
-                        "whatsapp": "55997316224"
-                    }
-                },
-                {
-                    "nome": "Dra. Fernanda Machado",
-                    "categoria": "Odontologia",
-                    "sobre": "Endodontista, clínica e cirurgiã dentista CRO-RS 28066",
-                    "foto": "img/fernanda-machado.jpeg",
-                    "contatos": {
-                        "whatsapp": "55997316224"
-                    }
-                },
-                {
-                    "nome": "Dr. Aluízio Vescia",
-                    "categoria": "Odontologia",
-                    "sobre": "Implante e Prótese Dentária CRO-RS 17821",
-                    "foto": "img/aluizio.jpeg",
-                    "contatos": {
-                        "whatsapp": "55997316224"
-                    }
-                },
-                {
-                    "nome": "Dra. Adriana Botta",
-                    "categoria": "Odontologia",
-                    "sobre": "Clinica, cirurgia e traumatologia bucomaxilofacial e harmonização orofacial CRO-RS 28040",
-                    "foto": "img/adriana-botta.jpeg",
-                    "contatos": {
-                        "whatsapp": "55997316224"
-                    }
-                }
-            ]
-        }
-        </script>
+
     </section>
+
+    <!-- Empresas Parceiras -->
+    <section id="parceiros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand.ink">Empresas Parceiras</h2>
+                <p class="mt-4 text-slate-600">Busque por nome ou filtre por categoria.</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="mt-8 grid md:grid-cols-3 gap-6 items-end">
+                <!-- Campo de busca -->
+                <div class="md:col-span-2">
+                    <label for="searchPartner" class="block text-sm font-medium text-slate-700 mb-1">Buscar por
+                        nome</label>
+                    <input id="searchPartner" type="text" placeholder="Ex.: Laboratório Meta..." class="mt-1 w-full rounded-xl border border-slate-300 shadow-sm px-4 py-3
+                  focus:border-brand-blue focus:ring-2 focus:ring-brand-blue focus:outline-none
+                  placeholder:text-slate-400 transition-all duration-200" />
+                </div>
+
+                <!-- Select de categoria -->
+                <div>
+                    <label for="filterPartnerCategory" class="block text-sm font-medium text-slate-700 mb-1">Filtrar por
+                        categoria</label>
+                    <select id="filterPartnerCategory" class="mt-1 w-full rounded-xl border border-slate-300 shadow-sm px-4 py-3
+                   focus:border-brand-blue focus:ring-2 focus:ring-brand-blue focus:outline-none
+                   bg-white transition-all duration-200">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid de parceiros -->
+            <div id="partnersGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+            <!-- Estado vazio -->
+            <div id="partnersEmpty" class="hidden mt-10 text-center text-slate-600">Nenhuma empresa encontrada com os
+                filtros aplicados.</div>
+        </div>
+    </section>
+
 
     <!-- Contato -->
     <section id="contato" class="py-20 bg-sky-50">
@@ -529,107 +458,8 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script>
-        // Utilidades
-        const $ = (sel, ctx = document) => ctx.querySelector(sel);
-        const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+    <script src="js/main.js"></script>
 
-        // Menu mobile
-        function toggleMenu() { $('#mobileMenu').classList.toggle('hidden'); }
-        $('#menuBtn').addEventListener('click', toggleMenu);
-
-        // Ano no footer
-        $('#yearCopy').textContent = new Date().getFullYear();
-
-        // Anos de mercado (dinâmico a partir de 12+)
-        const foundingYear = new Date().getFullYear() - 12; // ajustável
-        const anos = Math.max(12, new Date().getFullYear() - foundingYear);
-        $('#anosMercado').textContent = anos;
-
-        // Cookie banner
-        const cookieKey = 'solpoliclinica_cookie_consent_v1';
-        const saved = localStorage.getItem(cookieKey);
-        if (!saved) { $('#cookieBanner').classList.remove('hidden'); }
-        $('#cookieAccept').addEventListener('click', () => { localStorage.setItem(cookieKey, 'accepted'); $('#cookieBanner').classList.add('hidden'); });
-        $('#cookieDecline').addEventListener('click', () => { localStorage.setItem(cookieKey, 'declined'); $('#cookieBanner').classList.add('hidden'); });
-
-        // Equipe: carregar dados do JSON embutido
-        const raw = document.getElementById('professionals-data').textContent;
-        const data = JSON.parse(raw);
-        const team = data.profissionais || [];
-        const teamGrid = document.getElementById('teamGrid');
-        const emptyState = document.getElementById('emptyState');
-        const filterCategory = document.getElementById('filterCategory');
-        const searchName = document.getElementById('searchName');
-
-        // Popular categorias únicas
-        const categories = Array.from(new Set(team.map(p => p.categoria))).sort();
-        for (const c of categories) {
-            const opt = document.createElement('option');
-            opt.value = c;
-            opt.textContent = c;
-            filterCategory.appendChild(opt);
-        }
-
-        function cardTemplate(p) {
-            const photo = p.foto || 'https://via.placeholder.com/600x400?text=Profissional';
-            const wa = p.contatos && p.contatos.whatsapp ? `https://wa.me/${p.contatos.whatsapp}` : 'https://wa.me/55997316224';
-            return `<article class="group bg-white rounded-2xl shadow-soft border border-slate-100 overflow-hidden hover:-translate-y-0.5 transition">\
-            <div class="relative w-full overflow-hidden rounded-xl shadow-soft bg-white">
-            <img src="${photo}" alt="${p.nome}" 
-                class="w-full max-h-64 mx-auto object-contain rounded-xl"/>
-            <span class="absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full 
-                        bg-yellow-100 text-yellow-800 ring-1 ring-yellow-200">
-                ${p.categoria}
-            </span>
-            </div>
-        
-        <div class="p-5">\
-          <h3 class="text-lg font-semibold text-brand.ink">${p.nome}</h3>\
-          <p class="mt-1 text-sm text-slate-600">${p.sobre || ''}</p>\
-          <div class="mt-4 flex items-center gap-2">\
-            <a href="${wa}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-brand-blue text-white text-sm font-medium hover:bg-brand-blueDark">\
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.057 0c3.182 0 6.167 1.24 8.413 3.488a11.82 11.82 0 013.488 8.41c-.003 6.653-5.284 11.935-11.938 11.935-1.99 0-3.95-.49-5.688-1.425L.057 24z"/></svg>\
-              WhatsApp\
-            </a>\
-          </div>\
-        </div>\
-      </article>`;
-        }
-
-        function render() {
-            const q = searchName.value.trim().toLowerCase();
-            const cat = filterCategory.value;
-            const filtered = team.filter(p => {
-                const byName = !q || p.nome.toLowerCase().includes(q);
-                const byCat = !cat || p.categoria === cat;
-                return byName && byCat;
-            });
-            teamGrid.innerHTML = filtered.map(cardTemplate).join('');
-            emptyState.classList.toggle('hidden', filtered.length !== 0);
-        }
-
-        searchName.addEventListener('input', render);
-        filterCategory.addEventListener('change', render);
-        render();
-
-        // Form de contato (exemplo: abre WhatsApp com mensagem)
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const form = new FormData(e.target);
-            const nome = form.get('nome');
-            const tel = form.get('telefone');
-            const email = form.get('email');
-            const mensagem = form.get('mensagem');
-            const texto = encodeURIComponent(`Olá, meu nome é ${nome}. Telefone: ${tel} | E-mail: ${email}.
-Mensagem: ${mensagem}`);
-            const url = `https://wa.me/55997316224?text=${texto}`;
-            window.open(url, '_blank');
-            document.getElementById('formStatus').textContent = 'Mensagem aberta no WhatsApp. Se preferir, aguarde nosso retorno pelo número informado.';
-            e.target.reset();
-        });
-    </script>
 </body>
 
 </html>
