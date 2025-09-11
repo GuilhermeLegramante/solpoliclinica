@@ -288,7 +288,6 @@
                 </div>
             </div>
 
-
             <!-- Grid de profissionais -->
             <div id="teamGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
@@ -296,9 +295,49 @@
             <div id="emptyState" class="hidden mt-10 text-center text-slate-600">Nenhum profissional encontrado com os
                 filtros aplicados.</div>
         </div>
-
-
     </section>
+
+    <!-- Profissionais Parceiros -->
+    <section id="profissionaisParceiros" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand.ink">Profissionais Parceiros</h2>
+                <p class="mt-4 text-slate-600">Busque por nome ou filtre por categoria.</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="mt-8 grid md:grid-cols-3 gap-6 items-end">
+                <!-- Campo de busca -->
+                <div class="md:col-span-2">
+                    <label for="searchProfessionalPartner" class="block text-sm font-medium text-slate-700 mb-1">Buscar
+                        por nome</label>
+                    <input id="searchProfessionalPartner" type="text" placeholder="Ex.: Dr(a). Ariane Martins..." class="mt-1 w-full rounded-xl border border-slate-300 shadow-sm px-4 py-3
+          focus:border-brand-blue focus:ring-2 focus:ring-brand-blue focus:outline-none
+          placeholder:text-slate-400 transition-all duration-200" />
+                </div>
+
+                <!-- Select de categoria -->
+                <div>
+                    <label for="filterProfessionalPartnerCategory"
+                        class="block text-sm font-medium text-slate-700 mb-1">Filtrar por categoria</label>
+                    <select id="filterProfessionalPartnerCategory" class="mt-1 w-full rounded-xl border border-slate-300 shadow-sm px-4 py-3
+          focus:border-brand-blue focus:ring-2 focus:ring-brand-blue focus:outline-none
+          bg-white transition-all duration-200">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid de profissionais parceiros -->
+            <div id="professionalPartnersGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+            <!-- Estado vazio -->
+            <div id="professionalPartnersEmpty" class="hidden mt-10 text-center text-slate-600">
+                Nenhum profissional parceiro encontrado com os filtros aplicados.
+            </div>
+        </div>
+    </section>
+
 
     <!-- Empresas Parceiras -->
     <section id="parceiros" class="py-20 bg-white">
@@ -356,7 +395,8 @@
                 </div>
                 <div class="mt-6 flex items-center gap-4">
                     <!-- Redes sociais (links de exemplo) -->
-                    <a href="https://www.instagram.com/solpoliclinica?igsh=MmFuZDA0ZHlsMzl5" target="_blank" aria-label="Instagram"
+                    <a href="https://www.instagram.com/solpoliclinica?igsh=MmFuZDA0ZHlsMzl5" target="_blank"
+                        aria-label="Instagram"
                         class="p-3 rounded-xl bg-white shadow-soft ring-1 ring-slate-200 hover:scale-105 transition"><svg
                             xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path

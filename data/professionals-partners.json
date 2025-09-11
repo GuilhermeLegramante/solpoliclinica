@@ -1,0 +1,211 @@
+{
+    "professionals-partners": [
+        {
+            "nome": "Dr(a). Ariane Martins",
+            "categoria": "Psicologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999872887"
+            }
+        },
+        {
+            "nome": "Dr(a). Caroline Saretto",
+            "categoria": "Pediatria",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999316105"
+            }
+        },
+        {
+            "nome": "Dr(a). Carlos D'ávila",
+            "categoria": "Pediatria",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-5230"
+            }
+        },
+        {
+            "nome": "Dr(a). Camila de David",
+            "categoria": "Reumatologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999316105"
+            }
+        },
+        {
+            "nome": "Dr(a). Diego Denardi",
+            "categoria": "Oftalmologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-9294"
+            }
+        },
+        {
+            "nome": "Dr(a). Heltor Pereira",
+            "categoria": "Cirurgia Vascular",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999316105"
+            }
+        },
+        {
+            "nome": "Dr(a). Janaina Cruz",
+            "categoria": "Fonoaudiologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-8904"
+            }
+        },
+        {
+            "nome": "Dr(a). Kariany Bianchini",
+            "categoria": "Psicologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55996371733"
+            }
+        },
+        {
+            "nome": "Dr(a). Karine Locatelli",
+            "categoria": "Endocrinologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-30901"
+            }
+        },
+        {
+            "nome": "Dr(a). Leonardo Machado",
+            "categoria": "Oftalmologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999316105"
+            }
+        },
+        {
+            "nome": "Dr(a). Leonardo Melo",
+            "categoria": "Traumatologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-8904"
+            }
+        },
+        {
+            "nome": "Dr(a). Luis Carlos Isolan",
+            "categoria": "Traumatologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-1672"
+            }
+        },
+        {
+            "nome": "Dr(a). Luandra Fernandes",
+            "categoria": "Psicologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999319477"
+            }
+        },
+        {
+            "nome": "Dr(a). Marcos Lemos",
+            "categoria": "Urologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-8904"
+            }
+        },
+        {
+            "nome": "Dr(a). Marcia Ferreira",
+            "categoria": "Psicologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "55999512503"
+            }
+        },
+        {
+            "nome": "Dr(a). Marla Pires",
+            "categoria": "Psicologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55997126632"
+            }
+        },
+        {
+            "nome": "Dr(a). Mauricio Soares",
+            "categoria": "Pneumologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-7752"
+            }
+        },
+        {
+            "nome": "Dr(a). Renato Costa",
+            "categoria": "Psiquiatria",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-2933"
+            }
+        },
+        {
+            "nome": "Dr(a). Ricardo Brandão",
+            "categoria": "Otorrinolaringologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-1672"
+            }
+        },
+        {
+            "nome": "Dr(a). Rose Mari Martins",
+            "categoria": "Ginecologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55996978340"
+            }
+        },
+        {
+            "nome": "Dr(a). Taiany Colpo",
+            "categoria": "Psicologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999588316"
+            }
+        },
+        {
+            "nome": "Dr(a). Thais Santi",
+            "categoria": "Psicologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55996963019"
+            }
+        },
+        {
+            "nome": "Dr(a). Thais Silva de Souza",
+            "categoria": "Fisioterapia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "whatsapp": "55999713088"
+            }
+        }
+    ]
+}
