@@ -22,7 +22,7 @@
             "nome": "Dr(a). Ana Paula Menges",
             "categoria": "Nutrição",
             "sobre": "",
-            "foto": "img/logo-azul.png",
+            "foto": "img/anapaula-nutri.jpeg",
             "contatos": {
                 "telefone": "3251-8904"
             }
@@ -31,7 +31,7 @@
             "nome": "Dr(a). Andreia Colbek",
             "categoria": "Psicologia",
             "sobre": "",
-            "foto": "img/logo-azul.png",
+            "foto": "img/andreia-psico.jpeg",
             "contatos": {
                 "telefone": "3251-8904"
             }
@@ -49,7 +49,7 @@
             "nome": "Dr(a). Caio Felix",
             "categoria": "Neurologia",
             "sobre": "",
-            "foto": "img/logo-azul.png",
+            "foto": "img/lcaio-neuro.jpeg",
             "contatos": {
                 "telefone": "3251-8904"
             }
@@ -103,7 +103,7 @@
             "nome": "Dr(a). Douglas de Araújo",
             "categoria": "Psiquiatria",
             "sobre": "",
-            "foto": "img/logo-azul.png",
+            "foto": "img/douglas-psiquiatra.jpeg",
             "contatos": {
                 "telefone": "3251-8904"
             }
@@ -138,6 +138,15 @@
         {
             "nome": "Dr(a). Janaina Cruz",
             "categoria": "Fonoaudiologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
+            "contatos": {
+                "telefone": "3251-8904"
+            }
+        },
+        {
+            "nome": "Dr(a). Juliano Munaro",
+            "categoria": "Dermatologia",
             "sobre": "",
             "foto": "img/logo-azul.png",
             "contatos": {
@@ -217,6 +226,15 @@
             }
         },
         {
+            "nome": "Dr(a). Marciele Silva Munaretto",
+            "categoria": "Enfermagem",
+            "sobre": "Consultora em amamentação, especialista em furo de orelha humanizado e laserterapia aplicada.",
+            "foto": "img/marciele.jpeg",
+            "contatos": {
+                "telefone": "55999512503"
+            }
+        },
+        {
             "nome": "Dr(a). Marla Pires",
             "categoria": "Psicologia",
             "sobre": "",
@@ -238,7 +256,7 @@
             "nome": "Dr(a). Rafael Cruz",
             "categoria": "Cirurgia Geral",
             "sobre": "",
-            "foto": "img/logo-azul.png",
+            "foto": "img/rafael-cirurgiao.jpeg",
             "contatos": {
                 "telefone": "3251-8904"
             }
@@ -310,7 +328,7 @@
             "nome": "Dr(a). Thais Trevissan",
             "categoria": "Pediatria",
             "sobre": "",
-            "foto": "img/logo-azul.png",
+            "foto": "img/thais-pediatra.jpeg",
             "contatos": {
                 "telefone": "3251-8904"
             }
@@ -319,7 +337,7 @@
             "nome": "Dr(a). Ubahiara Gomes",
             "categoria": "Oftalmologia",
             "sobre": "",
-            "foto": "img/logo-azul.png",
+            "foto": "img/ubahiara.jpeg",
             "contatos": {
                 "telefone": "3251-8904"
             }
