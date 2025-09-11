@@ -1,7 +1,7 @@
 {
     "profissionais": [
         {
-            "nome": "Dr(a). Adriana Botta",
+            "nome": "Dra. Adriana Botta",
             "categoria": "Odontologia",
             "sobre": "Clinica, cirurgia e traumatologia bucomaxilofacial e harmonização orofacial CRO-RS 28040",
             "foto": "img/adriana-botta.jpeg",
@@ -10,7 +10,7 @@
             }
         },
         {
-            "nome": "Dr(a). Aluízio Vescia",
+            "nome": "Dr. Aluízio Vescia",
             "categoria": "Odontologia",
             "sobre": "Implante e Prótese Dentária CRO-RS 17821",
             "foto": "img/aluizio.jpeg",
@@ -19,7 +19,7 @@
             }
         },
         {
-            "nome": "Dr(a). Ana Paula Menges",
+            "nome": "Dra. Ana Paula Menges",
             "categoria": "Nutrição",
             "sobre": "",
             "foto": "img/anapaula-nutri.jpeg",
@@ -28,7 +28,7 @@
             }
         },
         {
-            "nome": "Dr(a). Andreia Colbek",
+            "nome": "Dra. Andreia Colbek",
             "categoria": "Psicologia",
             "sobre": "",
             "foto": "img/andreia-psico.jpeg",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "nome": "Dr(a). Caio Felix",
+            "nome": "Dr. Caio Felix",
             "categoria": "Neurologia",
             "sobre": "",
             "foto": "img/caio-neuro.jpeg",
@@ -46,7 +46,7 @@
             }
         },
         {
-            "nome": "Dr(a). Chrissie Campos Corrêa de Brum",
+            "nome": "Dra. Chrissie Campos Corrêa de Brum",
             "categoria": "Psicopedagogia Clínica",
             "sobre": "Avaliação e intervenção em dificuldades e transtornos de aprendizagem.",
             "foto": "img/psicopedagoga.png",
@@ -55,7 +55,7 @@
             }
         },
         {
-            "nome": "Dr(a). Cristiane Castiglioni",
+            "nome": "Dra. Cristiane Castiglioni",
             "categoria": "Psicologia",
             "sobre": "",
             "foto": "img/cristiane.png",
@@ -64,7 +64,7 @@
             }
         },
         {
-            "nome": "Dr(a). Douglas de Araújo",
+            "nome": "Dr. Douglas de Araújo",
             "categoria": "Psiquiatria",
             "sobre": "",
             "foto": "img/douglas-psiquiatra.jpeg",
@@ -73,7 +73,7 @@
             }
         },
         {
-            "nome": "Dr(a). Fernanda Machado",
+            "nome": "Dra. Fernanda Machado",
             "categoria": "Odontologia",
             "sobre": "Endodontista, clínica e cirurgiã dentista CRO-RS 28066",
             "foto": "img/fernanda-machado.jpeg",
@@ -82,7 +82,7 @@
             }
         },
         {
-            "nome": "Dr(a). Gilmar Nunes",
+            "nome": "Dr. Gilmar Nunes",
             "categoria": "Cardiologia",
             "sobre": "",
             "foto": "img/cardio.png",
@@ -91,7 +91,7 @@
             }
         },
         {
-            "nome": "Dr(a). Juliano Munaro",
+            "nome": "Dr. Juliano Munaro",
             "categoria": "Dermatologia",
             "sobre": "",
             "foto": "img/julianomunaro.jpeg",
@@ -100,7 +100,7 @@
             }
         },
         {
-            "nome": "Dr(a). Marciele Silva Munaretto",
+            "nome": "Dra. Marciele Silva Munaretto",
             "categoria": "Enfermagem",
             "sobre": "Consultora em amamentação, especialista em furo de orelha humanizado e laserterapia aplicada.",
             "foto": "img/marciele.jpeg",
@@ -109,7 +109,7 @@
             }
         },
         {
-            "nome": "Dr(a). Rafael Cruz",
+            "nome": "Dr. Rafael Cruz",
             "categoria": "Cirurgia Geral",
             "sobre": "",
             "foto": "img/rafael-cirurgiao.jpeg",
@@ -118,7 +118,7 @@
             }
         },
         {
-            "nome": "Dr(a). Sabrina Evelise Nogueira",
+            "nome": "Dra. Sabrina Evelise Nogueira",
             "categoria": "Odontologia",
             "sobre": "Clínica e Endodontia CRO-RS 16979",
             "foto": "img/sabrina-evelise.jpeg",
@@ -127,7 +127,7 @@
             }
         },
         {
-            "nome": "Dr(a). Thais Trevissan",
+            "nome": "Dra. Thais Trevissan",
             "categoria": "Pediatria",
             "sobre": "",
             "foto": "img/thais-pediatra.jpeg",
@@ -136,7 +136,7 @@
             }
         },
         {
-            "nome": "Dr(a). Ubahiara Gomes",
+            "nome": "Dr. Ubahiara Gomes",
             "categoria": "Oftalmologia",
             "sobre": "",
             "foto": "img/ubahiara.jpeg",
@@ -145,7 +145,7 @@
             }
         },
         {
-            "nome": "Dr(a). Vanessa Ferreira",
+            "nome": "Dra. Vanessa Ferreira",
             "categoria": "Psicologia",
             "sobre": "",
             "foto": "img/logo-azul.png",
