@@ -46,6 +46,15 @@
             }
         },
         {
+            "nome": "Dr(a). Chrissie Campos Corrêa de Brum",
+            "categoria": "Psicopedagogia Clínica",
+            "sobre": "",
+            "foto": "img/psicopedagoga.png",
+            "contatos": {
+                "telefone": "55997316224"
+            }
+        },
+        {
             "nome": "Dr(a). Cristina Castiglioni",
             "categoria": "Psicologia",
             "sobre": "",
