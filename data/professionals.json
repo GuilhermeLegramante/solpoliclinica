@@ -152,15 +152,6 @@
             "contatos": {
                 "telefone": "3251-8904"
             }
-        },
-        {
-            "nome": "Dra. Vanessa Ferreira",
-            "categoria": "Psicologia",
-            "sobre": "",
-            "foto": "img/logo-azul.png",
-            "contatos": {
-                "whatsapp": "55996793676"
-            }
         }
     ]
 }
