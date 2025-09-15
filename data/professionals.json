@@ -63,6 +63,15 @@
                 "telefone": "3251-8904"
             }
         },
+         {
+            "nome": "Dra. Cristina Grazzioli",
+            "categoria": "Odontologia",
+            "sobre": "Especialista em ortodontia e Doctor Invisalign.",
+            "foto": "img/cristina-grazzioli.jpeg",
+            "contatos": {
+                "telefone": "3251-8904"
+            }
+        },
         {
             "nome": "Dr. Douglas de Araújo",
             "categoria": "Psiquiatria",
