@@ -63,7 +63,7 @@
                 "telefone": "3251-8904"
             }
         },
-         {
+        {
             "nome": "Dra. Cristina Grazzioli",
             "categoria": "Odontologia",
             "sobre": "Especialista em ortodontia e Doctor Invisalign CRO-21007.",
@@ -104,6 +104,15 @@
             "categoria": "Dermatologia",
             "sobre": "",
             "foto": "img/julianomunaro.jpeg",
+            "contatos": {
+                "telefone": "3251-8904"
+            }
+        },
+        {
+            "nome": "Dr. Leonardo Melo",
+            "categoria": "Traumatologia",
+            "sobre": "",
+            "foto": "img/logo-azul.png",
             "contatos": {
                 "telefone": "3251-8904"
             }
